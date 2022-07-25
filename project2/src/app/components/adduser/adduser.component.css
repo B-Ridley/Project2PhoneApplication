@@ -1,0 +1,34 @@
+
+.header {
+    margin-left: 3%;
+}
+.row {
+    margin-top: 1%;
+    width: 75%;
+    align-items: center;
+    margin-left: 2%;
+       
+    }
+.row1 {
+    margin-top: 1%;
+    width: 75%;
+    align-items: center;   
+        
+    }
+    
+.html, .body {
+    height: 100%;
+    position: relative;   
+    }
+    
+.center-button{
+    margin-top: 2%; 
+    margin-left: 12%;
+ 
+    }    
+.form-row {
+    margin-top: 1%;
+    width: 75%;
+    align-items: center;
+    margin-left: 2%;
+}

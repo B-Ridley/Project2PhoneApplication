@@ -1,0 +1,136 @@
+<!-- The homepage layout -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+
+
+    <!-- This will reference a bootstrap style sheet for bootstrap styling-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+  <title>Bootstrap Tutorial Sample Page</title>
+
+
+  <meta charset="utf-8">
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+ 
+
+
+</head>
+
+
+<body>
+  
+  
+<!-- drop down menu -->
+
+<div class="dropdown">
+  <button class="dropbtn">Menu</button>
+  <div class="dropdown-content">
+    <a href="#">Login</a>
+    <a href="http://localhost:4200/billing">Bill Pay</a>
+    <a href="#">Add a Line</a>
+    <a href="http://localhost:4200/modify">Upgrade</a>
+    <a href="#">Check Order Status</a>
+    <a href="#">Register</a>
+    <a href="#">Logout</a>
+    </div>
+  
+</div>  
+
+
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
+
+</body>
+<div>
+
+ <!-- Add a menu to the homepage from the Menu Component-->
+  <app-menu></app-menu> 
+
+
+ <!-- Add some phone plans to the home page-->
+<div class="container">
+  <div class="row">
+    <div class="col-md-4 mb-3">
+<div class="card" style="width: 18rem;">
+    <div class="card-header"><strong>Featured Plan</strong></div>
+    <img class="card-img-top" src="https://png.pngitem.com/pimgs/s/509-5092096_offering-high-quality-mobile-repair-service-main-image.png" alt="mobile phones">
+    <div class="card-body">
+      <h5 class="card-title">Mystic Unlimited Premium Plan</h5>
+      <p class="card-text">$50/mo per line when you get 4 lines</p>
+      <h6 class="card-text">Features</h6>
+      <h6 class="card-text"> |Unlimited 5G & 4G LTE data| |Unlimited talk, text, & premium data| |BYOD|</h6>
+      <h6 class="card-text"> |40GB high-speed mobile hotspot| |Nationwide 5G Coverage| |Advanced scam-blocking protection|</h6>
+      <h6 class="card-text"> Device Limit: 6 </h6>
+    </div>
+   
+    <div class="center-button">
+        <a href="http://localhost:4200/view" class="btn btn-primary">Choose Plan</a>
+    </div>
+  </div>
+
+
+</div>
+
+<div class="col-md-4 mb-3">
+  <div class="card" style="width: 18rem;">
+    <div class="card-header">Most Popular Family Option</div>
+      <img class="card-img-top" src="https://r3.whistleout.com.au/public/images/articles/2019/01/aldi_fam_pack.jpg" alt="Family using mobile devices">
+      <div class="card-body">
+        <h5 class="card-title">Mystic Unlimited Extra Plan</h5>
+        <p class="card-text">$40/mo per line when you get 4 lines</p>
+        <h6 class="card-text">Features</h6>
+        <h6 class="card-text"> |Unlimited 5G & 4G LTE data| |Unlimited talk, text, data, + 60GB of premium data|</h6>
+        <h6 class="card-text"> |40GB high-speed mobile hotspot| |Nationwide 5G Coverage| |Advanced scam-blocking protection|</h6>
+        <h6 class="card-text"> Device Limit: 5 </h6>
+      </div>
+      
+      <div class="center-button">
+          <a href="http://localhost:4200/view" class="btn btn-primary">Choose Plan</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-4 mb-3">
+    <div class="card" style="width: 18rem;">
+      <div class="card-header">Customize for Seniors/Children</div>
+        <img class="card-img-top" src="https://oversixtydev.blob.core.windows.net/media/7832830/family-mobile-device.jpg" alt="Family using mobile devices">
+        <div class="card-body">
+          <h5 class="card-title">Mystic Unlimted Family Plan</h5>
+          <p class="card-text">$55/mo per line when you get 4 lines</p>
+          <h6 class="card-text">Features</h6>
+          <h6 class="card-text"> |Unlimited 5G & 4G LTE data| |Unlimited talk, text, data| |Device & Plan Customization|</h6>
+          <h6 class="card-text"> |40GB high-speed mobile hotspot| |Nationwide 5G Coverage| |Advanced scam-blocking protection|</h6>
+          <h6 class="card-text"> Device Limit: 7 </h6>
+        </div>
+        
+        <div class="center-button">
+            <a href="http://localhost:4200/view" class="btn btn-primary">Choose Plan</a>
+        </div>
+      </div>
+  </div>
+  </div>
+</div>
+
+</div>
+<!-- <app-phone-plans></app-phone-plans> --> 
+
+
+
+
+
+</html>
