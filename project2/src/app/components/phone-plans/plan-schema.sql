@@ -6,7 +6,7 @@ create table plans(
     planname varchar(125) not null primary key, 
     price double not null,
     dataspeed varchar not null, --data speed is either 4G or 5G
-    plantype varchar(160) not null,   -- plan type 
+    plantype varchar(260) not null,   -- plan type 
     devicelimit int not null,
     enabled boolean not null
 );

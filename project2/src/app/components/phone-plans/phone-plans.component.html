@@ -72,29 +72,29 @@
 
 
 <div class="container">
-  <div class="row">
-    <div class="col-md-4 mb-3">
+  <div class="row" >
+    <div class="col-md-4 mb-3" *ngFor="let plans of phonePlansList">
 <div class="card" style="width: 18rem;">
     <div class="card-header"><strong>Featured Plan</strong></div>
-    <img class="card-img-top" src="https://png.pngitem.com/pimgs/s/509-5092096_offering-high-quality-mobile-repair-service-main-image.png" alt="mobile phones">
+    <img class="card-img-top" src={{plans.plan_image}} alt="mobile phones">
     <div class="card-body">
-      <h5 class="card-title">Mystic Unlimited Premium Plan</h5>
-      <p class="card-text">$50/mo per line when you get 4 lines</p>
+      <h5 class="card-title">{{plans.plan_name}}</h5>
+      <p class="card-text">${{plans.plan_price}}/mo per line when you get 4 lines</p>
       <h6 class="card-text">Features</h6>
-      <h6 class="card-text"> |Unlimited 5G & 4G LTE data| |Unlimited talk, text, & premium data| |BYOD|</h6>
+      <h6 class="card-text">{{plans.plan_type}} </h6>
       <h6 class="card-text"> |40GB high-speed mobile hotspot| |Nationwide 5G Coverage| |Advanced scam-blocking protection|</h6>
-      <h6 class="card-text"> Device Limit: 6 </h6>
+      <h6 class="card-text">Device Limit: {{plans.device_limit}} </h6>
     </div>
    
     <div class="center-button">
-        <a href="http://localhost:4200/view" class="btn btn-primary">Choose Plan</a>
-    </div>
-  </div>
+        <a class="btn btn-primary"(click)="handleAddToCart()">Choose Plan</a>
+    </div> 
+  </div> 
 
 
 </div>
 
-<div class="col-md-4 mb-3">
+ <!--  <div class="col-md-4 mb-3">
   <div class="card" style="width: 18rem;">
     <div class="card-header">Most Popular Family Option</div>
       <img class="card-img-top" src="https://r3.whistleout.com.au/public/images/articles/2019/01/aldi_fam_pack.jpg" alt="Family using mobile devices">
@@ -108,7 +108,7 @@
       </div>
       
       <div class="center-button">
-          <a href="http://localhost:4200/view" class="btn btn-primary">Choose Plan</a>
+          <a href="http://localhost:4200/view" class="btn btn-primary" (click)="handleAddToCart()">Choose Plan</a>
       </div>
     </div>
   </div>
@@ -127,7 +127,7 @@
         </div>
         
         <div class="center-button">
-            <a href="http://localhost:4200/view" class="btn btn-primary">Choose Plan</a>
+            <a href="http://localhost:4200/view" class="btn btn-primary" (click)="handleAddToCart()">Choose Plan</a>
         </div>
       </div>
     
@@ -149,7 +149,7 @@
               </div>
              
           <div class="center-button">
-            <a href="http://localhost:4200/view" class="btn btn-primary">Choose Plan</a>
+            <a href="http://localhost:4200/view" class="btn btn-primary" (click)="handleAddToCart()">Choose Plan</a>
       </div>
     </div>  
   </div>
@@ -167,27 +167,24 @@
           </div>
           
       <div class="center-button">
-        <a href="http://localhost:4200/view" class="btn btn-primary">Choose Plan</a>
+        <a href="http://localhost:4200/view" class="btn btn-primary" (click)="handleAddToCart()">Choose Plan</a>
       </div>
     </div>
   </div>
-</div>  
+</div>  -->
 
 
-</div>
-</div>
+</div> 
+</div> 
 
+  
 
-
-<!-- Shopping functionality 
-      imported from the shopping cart file
-<app-cart></app-cart> -->
 
 
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
-
+  
 </body>
 
 

@@ -48,7 +48,7 @@
         <h1>Add New User</h1>
     </div>
     <div>
-      <form>
+   <form>
         
         
             <div class="form-row">
@@ -68,7 +68,7 @@
               </div>
               <div class="col-md-3 mb-3">
                 <label for="validationDefault02">Address 2</label>
-                <input type="text" class="form-control" id="validationDefault02" >
+                <input type="text" class="form-control" id="validationDefault02">
               </div>
             </div>
           
@@ -109,4 +109,28 @@
     
     
 </body>
-</html>
+</html> 
+
+
+<div class ="container">
+  <div class = "card">
+    <h3> User List</h3>
+    <div class = "card-body">
+      <table class="table table-striped">
+        <thead>
+          <th>Id</th>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Email</th>
+        </thead>
+        <tbody>
+            <tr *ngFor = "let users of users">
+              <td> {{users.id}} </td>
+              <td> {{users.email}} </td>
+              value={{users.name}} 
+            </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

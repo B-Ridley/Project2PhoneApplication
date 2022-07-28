@@ -33,7 +33,9 @@ import { ViewcartComponent } from './components/viewcart/viewcart.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgxPopperjsModule
+    NgxPopperjsModule,
+    HttpClientModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]
