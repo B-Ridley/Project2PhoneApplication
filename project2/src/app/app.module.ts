@@ -15,6 +15,8 @@ import { AdduserComponent } from './components/adduser/adduser.component';
 import { ModifyplanComponent } from './components/modifyplan/modifyplan.component';
 import { CartComponent } from './components/cart/cart.component';
 import { ViewcartComponent } from './components/viewcart/viewcart.component';
+import { CarticonnavComponent } from './components/carticonnav/carticonnav.component';
+import { PaymentComponent } from './components/payment/payment.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +30,8 @@ import { ViewcartComponent } from './components/viewcart/viewcart.component';
     ModifyplanComponent,
     CartComponent,
     ViewcartComponent,
+    CarticonnavComponent,
+    PaymentComponent,
     
   ],
   imports: [

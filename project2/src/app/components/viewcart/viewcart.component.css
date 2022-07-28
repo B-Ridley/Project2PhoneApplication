@@ -121,3 +121,5 @@ a {
     height:150px; 
     width:150px;
 }
+
+.warning{border-bottom:1px solid red !important}

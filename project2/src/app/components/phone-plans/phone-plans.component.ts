@@ -22,9 +22,10 @@ export class PhonePlansComponent implements OnInit {
     this.phonePlansList = this.planService.getPlans()
   }
 
-  handleAddToCart() {
-    //can't figure out how to return each individual object and not the entire array of plans. Sorry, I suck. :( 
-    this.msg.sendMsg(this.phonePlansList)
+  //
+  handleAddToCart(phoneplan: any) {
+    
+    this.msg.sendMsg(phoneplan)
   }
   
 

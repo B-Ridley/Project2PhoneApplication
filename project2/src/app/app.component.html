@@ -1,11 +1,5 @@
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * The content below * * * * * * * * * * * -->
-<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
-<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<!-- * * * * * * * * * Delete the template below * * * * * * * * * * -->
-<!-- * * * * * * * to get started with your project! * * * * * * * * -->
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- The App itself with a nav bar and styling-->
+
 
 <style>
   :host {
@@ -20,10 +14,11 @@
 
 /* Styling for the drop down menu */ 
 .dropbtn{
-  background-color: rgb(210, 204, 203);
+  background-color: rgb(113, 110, 109);
   color: white;
   width: 100px;
-  padding: 18px;
+  height: 50px;
+  padding: 15px;
   border: 0;
   font-size: 17px;
   }
@@ -31,7 +26,8 @@
 .dropdown {
     position:relative;
     display: inline-block;
-    width: 160px;
+    width: 95px;
+    
     
     
     }
@@ -88,38 +84,7 @@
     flex: 1;
   }
 
-  .toolbar {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 60px;
-    display: flex;
-    align-items: center;
-    background-color: #1976d2;
-    color: white;
-    font-weight: 600;
-  }
-
-  .toolbar img {
-    margin: 0 16px;
-  }
-
-  .toolbar #twitter-logo {
-    height: 40px;
-    margin: 0 8px;
-  }
-
-  .toolbar #youtube-logo {
-    height: 40px;
-    margin: 0 16px;
-  }
-
-  .toolbar #twitter-logo:hover,
-  .toolbar #youtube-logo:hover {
-    opacity: 0.8;
-  }
-
+  
   .content {
     display: flex;
     margin: 82px auto 32px;
@@ -293,31 +258,6 @@
     align-items: center;
   }
 
-  .github-star-badge {
-    color: #24292e;
-    display: flex;
-    align-items: center;
-    font-size: 12px;
-    padding: 3px 10px;
-    border: 1px solid rgba(27,31,35,.2);
-    border-radius: 3px;
-    background-image: linear-gradient(-180deg,#fafbfc,#eff3f6 90%);
-    margin-left: 4px;
-    font-weight: 600;
-  }
-
-  .github-star-badge:hover {
-    background-image: linear-gradient(-180deg,#f0f3f6,#e6ebf1 90%);
-    border-color: rgba(27,31,35,.35);
-    background-position: -.5em;
-  }
-
-  .github-star-badge .material-icons {
-    height: 16px;
-    width: 16px;
-    margin-right: 4px;
-  }
-
   
   /* Responsive Styles */
   @media screen and (max-width: 767px) {
@@ -357,27 +297,6 @@
 
 
 <!-- Navigation -->
-<!-- <nav class="navbar navbar-expand navbar-dark bg-dark">
-  <a class="navbar-brand" href="#">
-    <img src="https://b.kisscc0.com/20180814/elq/kisscc0-letter-typeface-m-alphabet-typography-gold-typography-m-5b7351780075c1.9807416815342841520019.png" width="30" height="30" class="d-inline-block align-top" alt="m logo">
-    Mystic Cellular 
-  </a>
-  <div class="navbar-nav">
-    <a class="nav-item nav-link" routerLink="/">Home |</a>
-    <a class="nav-item nav-link" routerLink="/phoneplans">Phone Plans |</a>
-    <a class="nav-item nav-link" routerLink="/myaccount">My Account |</a>
-    <a class="nav-item nav-link" routerLink="/contact">Contact Us |</a>
-    <a class="nav-item nav-link" routerLink="/help">Help |</a>
-    
-   <form class="d-flex"> <input class="form-control mr-2" type="search" placeholder="Search" aria-label="Search"> <button class="btn btn-outline-success" type="submit">Search</button> </form> 
-    
-  </div>
-  
-
-
-  
-</nav> --> 
-
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <div class="container-fluid"> <a class="navbar-brand" href="#">
     <img src="https://b.kisscc0.com/20180814/elq/kisscc0-letter-typeface-m-alphabet-typography-gold-typography-m-5b7351780075c1.9807416815342841520019.png" width="30" height="30" class="d-inline-block align-top" alt="m logo">
@@ -395,12 +314,22 @@
                       <li>
                           <hr class="dropdown-divider">
                       </li>
-                      <li><a class="dropdown-item" href="#">Accessories</a></li>
+                
+                    
+
+
                   </ul>
+                  
               </li>
+              
           </ul>
+         
           
-        <div class="dropdown">
+          
+      <!--  <div class="dropdown"> 
+          
+          
+          
             <button class="dropbtn">Menu</button>
             <div class="dropdown-content">
               <a href="#">Login</a>
@@ -412,15 +341,20 @@
               <a href="#">Logout</a>
               </div> 
             
-          </div>  
+          </div>  -->
+  
 
-
-          <form class="d-flex"> <input class="form-control mr-2" type="search" placeholder="Search" aria-label="Search"> <button class="btn btn-outline-success" type="submit">Search</button> </form>
       </div>
+      <app-carticonnav></app-carticonnav>
   </div>
+  
+    
+  
 </nav>
 
 <router-outlet></router-outlet>
 
-<!-- <app-user-account></app-user-account> -->
+
+
+
 

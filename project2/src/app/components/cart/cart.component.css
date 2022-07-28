@@ -98,3 +98,5 @@ a {
 .btn-apply {
     font-size: 11px
 }
+
+.warning{border-bottom:1px solid red !important}
